@@ -1,0 +1,43 @@
+{
+  "extends": "google",
+  "parser":"babel-eslint",
+  "plugins":["babel", "chai-expect", "react"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "linebreak-style": 0,
+    "generator-star-spacing": 0,
+    "semi": ["error", "never"],
+    "prefer-rest-params": "off",
+    "object-curly-spacing": ["error", "always", { "objectsInObjects": false }],
+    "no-unused-vars": "off",
+    "max-len": "off",
+    "no-undef": "off",
+    "padded-blocks": "off",
+    "operator-linebreak": "off",
+    "quotes": ["error", "single"],
+    "arrow-parens": ["error", "as-needed"],
+    "chai-expect/missing-assertion": 2,
+    "chai-expect/terminating-properties": 1,
+    "no-var": "off",
+    "indent": ["error", 2, { "SwitchCase":1 }],
+    "space-infix-ops": ["error", {"int32Hint": false}],
+    "arrow-spacing": ["error", {"before": true,"after": true }],
+    "no-multiple-empty-lines": ["error", {"max": 1}],
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "comma-dangle": ["error", "never"],
+    "capitalized-comments": ["error", "always", {"ignoreConsecutiveComments": true, "ignoreInlineComments": true}],
+    "react/jsx-curly-spacing": ["error", {"when": "always", "children": true}],
+    "react/jsx-indent": ["error", 2],
+    "react/jsx-curly-brace-presence": ["error", "never"],
+    "valid-jsdoc": "off",
+    "require-jsdoc": "off",
+    "space-before-function-paren": ["error", "always"],
+    "jsx-quotes": ["error", "prefer-double"]
+  }
+}

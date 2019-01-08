@@ -4,9 +4,9 @@ const schema = require('./schema/schema')
 
 const app = express()
 
-//Any incoming request looking for graphql route
+// Any incoming request looking for graphql route
 app.use('/graphql', expressGraphQL({
-  schema, //pass this schema to middleware
+  schema, // Pass this schema to middleware
   graphiql: true
 }))
 
